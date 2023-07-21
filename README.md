@@ -19,10 +19,10 @@ This is a Python script that fetches the latest news from a website and sends it
 git clone https://github.com/your_username/telegram-news-bot.git
 cd telegram-news-bot
 
-#Install the required packages:
+## Install the required packages:
 pip install requests beautifulsoup4 python-telegram-bot schedule
 
-#Configuration
+## Configuration
 1.Obtain your Telegram bot token by creating a bot on Telegram and getting the API token.
 
 2.Replace 'YOUR_BOT_TOKEN' in the script with your actual bot token.
@@ -31,13 +31,15 @@ pip install requests beautifulsoup4 python-telegram-bot schedule
 
 4.Adjust the url variable in the script to target the website you want to scrape news from.
 
-#Usage
+## Usage
+
 To run the bot, simply execute the Python script:
 python newscrap.py
 
 The bot will start posting the latest news to the specified Telegram channel every hour.
 
-##Customization
+## Customization
+
 You can modify the num_messages variable in the send_news function to control the number of news items sent in each message.
 
 Adjust the schedule.every().hour.do(job) line to customize the frequency of news updates.
