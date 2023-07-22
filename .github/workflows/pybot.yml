@@ -1,25 +1,25 @@
-name: run newscrap.py
+# name: run newscrap.py
 
-on:
-  schedule:
-    - cron: '*/5 * * * *' # Every 5 minutes
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *' # Every 5 minutes
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to GitHub runner
+#       - name: checkout repo content
+#         uses: actions/checkout@v2 # checkout the repository content to GitHub runner
 
-      - name: setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9' # install the Python version needed
+#       - name: setup python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.9' # install the Python version needed
 
-      - name: install dependencies
-        run: |
-          pip install requests beautifulsoup4 python-telegram-bot
+#       - name: install dependencies
+#         run: |
+#           pip install requests beautifulsoup4 python-telegram-bot
 
-      - name: execute py script # run newscrap.py
-        run: python newscrap.py
+#       - name: execute py script # run newscrap.py
+#         run: python newscrap.py
