@@ -10,6 +10,7 @@ This is a Python script that fetches the latest news from a website and sends it
 - `beautifulsoup4`
 - `python-telegram-bot`
 - `schedule`
+- `telebot`
 
 ## Installation
 
